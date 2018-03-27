@@ -11,7 +11,7 @@ $(document).ready(function() {
     sentence=$("#item1").val();
     letters=sentence.split("");
 
-    
+
     $(".result").fadeIn();
 
     letters.forEach (function(letter){
@@ -22,15 +22,15 @@ $(document).ready(function() {
           found++;
         }
         else{}
-
       });
 
       if (found===0)
       {
         newSentence+=letter;
       } else{}
-
     });
-    alert(newSentence);
+
+  $("#display").append(newSentence);
+
   });
 });
